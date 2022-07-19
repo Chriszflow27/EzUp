@@ -36,6 +36,13 @@
       .btn_image_icon {
         padding:5px;
       }
+      .fondo-seccion {
+    background-image: url(https://img.freepik.com/vector-gratis/gradiente-acuarela-purpura-fondo-claro-bokeh_53876-95746.jpg?w=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* padding-bottom: 70px; */
+}
       .btn_letter_icon {
         border: 1px solid #dbdbdb;
         border-radius: 5px;
@@ -87,6 +94,12 @@
           padding: 0;
           margin: 0 15px 0 0;
       }
+      .imagen-liga-actual-solicitudes-terminadas img {
+    width: 88%;
+}
+      .imagen-liga-destino-solicitudes-terminadas img {
+    width: 88%;
+}
       .feature_list div{
         padding-top: 5px;
         display: inline-block;
@@ -202,15 +215,15 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link nav_link" href="index.html" >Buy Boosting
+                <a class="nav-link nav_link" href="cliente.html" >Adquirir Servicio
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item active">
-                <a class="nav-link nav_link" href="demo.html">Demo</a>
+                <a class="nav-link nav_link" href="misservicios.html">Mis servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_link" id = "btn_login" data-toggle="modal"  data-target="#myModal">Log In</a>
+                <a class="nav-link nav_link" href="index.html">Cerrar Sesion</a>
               </li>
             </ul>
           </div>
@@ -219,23 +232,26 @@
     </header>
 
     <!-- Page Content -->
-    <div class="page-heading contact-heading header-text" style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="page-heading about-heading header-text" style="padding-top: 120px; padding-bottom: 60px;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <div id="particles-js" class="contenedor-particulas"><canvas class="particles-js-canvas-el" width="335" height="135" style="width: 100%; height: 100%;"></canvas></div>
             <div class="text-content">
-              <h4>LOL BOOSTING</h4>
-              <h2>LEADING LOL ELO BOOST PLATFORM</h2>
+              <h4>EZ UP</h4>
+              <h2>AREA DE SERVICIOS </h2>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script rel="preload" src="https://ezlol.gg/storage/web/js/particles.min.js"></script>
+    <script rel="preload" src="https://ezlol.gg/storage/web/js/particulas.js"></script>
 
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 fondo-seccion">
 
-        <div class="booster_action_div" style="text-align: center;">
+        <div class="booster_action_div " style="text-align: center;">
           <div class="booster_info">
             <div class="booster_icon">
             </div>
@@ -250,7 +266,7 @@
         </div>
       </div>
       <div class="col-lg-8 col-md-8">
-        <div class="products" style="margin-top: 30px;">
+        <div class="products col-md-12 fondo-seccion" style="margin-top: 3px;">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -262,16 +278,378 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 ">
                 <div class="filters-content">
                     <div class="row grid">
                         <div class="all des row" style="width: 100%;">
-                          <div class="progress_container">
-                            HTML
-                            <div id="html" class="skills">
-                              <small>80%</small>
-                            </div>
+                          <div class="tab-content" id="navCuentaContent">
+                            <div class="tab-pane fade" id="informacionPersonal" role="tabpanel" aria-labelledby="informacionPersonal">
+                              <div class="col-md-12">
+                                <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+                          <div class="col-md-10 contenedor-informacion-mi-cuenta">
+                            <div class="row">
+                              <div class="col-md-12 subtitulo-mi-cuenta pb-3">
+                                <h3>Perfil</h3>
+                                <span>Ingrese datos de perfil</span>
+                              </div>
+                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                <div class="micuenta-form-group form-group">
+                                    
+                                    <input class="estilo-input-reformado form-control" type="text" name="nombre-mi-cuenta" id="nombre-mi-cuenta" placeholder="Ingresa tu nombre real">
+                                    <span class="error-formulario" id="error-nombre">Debe ingresar una información valida</span>
+                                </div>
+                                              </div>
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                  <div class="micuenta-form-group form-group">
+                                                      
+                                                      <input type="text" class="estilo-input-reformado form-control" name="discord-mi-cuenta" id="discord-mi-cuenta" placeholder="Tu discord">
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                  <div class="micuenta-form-group form-group">
+                                                      
+                                                      <input type="number" class="estilo-input-reformado form-control" name="wssp-mi-cuenta" id="wssp-mi-cuenta" placeholder="WhatsApp con indicativo">
+                                                  </div>
+                                              </div>
+                                              <div class="micuenta-form-group col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                  
+                                                  <div class="dropdown bootstrap-select estilo-input-reformado form-control"><select class="estilo-input-reformado form-control selectpicker" data-live-search="true" name="pais-mi-cuenta" id="pais-mi-cuenta" value="" placeholder="Selecciona tu país de residencia" tabindex="-98">
+                                                      <option value="" data-tokens="Selecciona tu país de residencia">Selecciona tu país de residencia</option>
+                                                                                                              <option value="1" data-tokens="Afganistán">Afganistán</option>
+                                                                                                              <option value="2" data-tokens="Åland">Åland</option>
+                                                                                                              <option value="3" data-tokens="Albania">Albania</option>
+                                                                                                              <option value="4" data-tokens="Alemania">Alemania</option>
+                                                                                                              <option value="5" data-tokens="Andorra">Andorra</option>
+                                                                                                              <option value="6" data-tokens="Angola">Angola</option>
+                                                                                                              <option value="7" data-tokens="Anguila">Anguila</option>
+                                                                                                              <option value="8" data-tokens="Antártida">Antártida</option>
+                                                                                                              <option value="9" data-tokens="Antigua y Barbuda">Antigua y Barbuda</option>
+                                                                                                              <option value="10" data-tokens="Arabia Saudita">Arabia Saudita</option>
+                                                                                                              <option value="11" data-tokens="Argelia">Argelia</option>
+                                                                                                              <option value="12" data-tokens="Argentina">Argentina</option>
+                                                                                                              <option value="13" data-tokens="Armenia">Armenia</option>
+                                                                                                              <option value="14" data-tokens="Aruba">Aruba</option>
+                                                                                                              <option value="15" data-tokens="Australia">Australia</option>
+                                                                                                              <option value="16" data-tokens="Austria">Austria</option>
+                                                                                                              <option value="17" data-tokens="Azerbaiyán">Azerbaiyán</option>
+                                                                                                              <option value="18" data-tokens="Bahamas">Bahamas</option>
+                                                                                                              <option value="19" data-tokens="Bangladés">Bangladés</option>
+                                                                                                              <option value="20" data-tokens="Barbados">Barbados</option>
+                                                                                                              <option value="21" data-tokens="Baréin">Baréin</option>
+                                                                                                              <option value="22" data-tokens="Bélgica">Bélgica</option>
+                                                                                                              <option value="23" data-tokens="Belice">Belice</option>
+                                                                                                              <option value="24" data-tokens="Benín">Benín</option>
+                                                                                                              <option value="25" data-tokens="Bermudas">Bermudas</option>
+                                                                                                              <option value="26" data-tokens="Bielorrusia">Bielorrusia</option>
+                                                                                                              <option value="27" data-tokens="Bolivia">Bolivia</option>
+                                                                                                              <option value="28" data-tokens="Bonaire, San Eustaquio y Saba">Bonaire, San Eustaquio y Saba</option>
+                                                                                                              <option value="29" data-tokens="Bosnia y Herzegovina">Bosnia y Herzegovina</option>
+                                                                                                              <option value="30" data-tokens="Botsuana">Botsuana</option>
+                                                                                                              <option value="31" data-tokens="Brasil">Brasil</option>
+                                                                                                              <option value="32" data-tokens="Brunéi">Brunéi</option>
+                                                                                                              <option value="33" data-tokens="Bulgaria">Bulgaria</option>
+                                                                                                              <option value="34" data-tokens="Burkina Faso">Burkina Faso</option>
+                                                                                                              <option value="35" data-tokens="Burundi">Burundi</option>
+                                                                                                              <option value="36" data-tokens="Bután">Bután</option>
+                                                                                                              <option value="37" data-tokens="Cabo Verde">Cabo Verde</option>
+                                                                                                              <option value="38" data-tokens="Camboya">Camboya</option>
+                                                                                                              <option value="39" data-tokens="Camerún">Camerún</option>
+                                                                                                              <option value="40" data-tokens="Canadá">Canadá</option>
+                                                                                                              <option value="41" data-tokens="Catar">Catar</option>
+                                                                                                              <option value="42" data-tokens="Chad">Chad</option>
+                                                                                                              <option value="43" data-tokens="Chile">Chile</option>
+                                                                                                              <option value="44" data-tokens="China">China</option>
+                                                                                                              <option value="45" data-tokens="Chipre">Chipre</option>
+                                                                                                              <option value="46" data-tokens="Colombia">Colombia</option>
+                                                                                                              <option value="47" data-tokens="Comoras">Comoras</option>
+                                                                                                              <option value="48" data-tokens="Corea del Norte">Corea del Norte</option>
+                                                                                                              <option value="49" data-tokens="Corea del Sur">Corea del Sur</option>
+                                                                                                              <option value="50" data-tokens="Costa de Marfil">Costa de Marfil</option>
+                                                                                                              <option value="51" data-tokens="Costa Rica">Costa Rica</option>
+                                                                                                              <option value="52" data-tokens="Croacia">Croacia</option>
+                                                                                                              <option value="53" data-tokens="Cuba">Cuba</option>
+                                                                                                              <option value="54" data-tokens="Curazao">Curazao</option>
+                                                                                                              <option value="55" data-tokens="Dinamarca">Dinamarca</option>
+                                                                                                              <option value="56" data-tokens="Dominica">Dominica</option>
+                                                                                                              <option value="57" data-tokens="Ecuador">Ecuador</option>
+                                                                                                              <option value="58" data-tokens="Egipto">Egipto</option>
+                                                                                                              <option value="59" data-tokens="El Salvador">El Salvador</option>
+                                                                                                              <option value="60" data-tokens="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                                                                                                              <option value="61" data-tokens="Eritrea">Eritrea</option>
+                                                                                                              <option value="62" data-tokens="Eslovaquia">Eslovaquia</option>
+                                                                                                              <option value="63" data-tokens="Eslovenia">Eslovenia</option>
+                                                                                                              <option value="64" data-tokens="España">España</option>
+                                                                                                              <option value="65" data-tokens="Estados Unidos">Estados Unidos</option>
+                                                                                                              <option value="66" data-tokens="Estonia">Estonia</option>
+                                                                                                              <option value="67" data-tokens="Etiopía">Etiopía</option>
+                                                                                                              <option value="68" data-tokens="Filipinas">Filipinas</option>
+                                                                                                              <option value="69" data-tokens="Finlandia">Finlandia</option>
+                                                                                                              <option value="70" data-tokens="Fiyi">Fiyi</option>
+                                                                                                              <option value="71" data-tokens="Francia">Francia</option>
+                                                                                                              <option value="72" data-tokens="Gabón">Gabón</option>
+                                                                                                              <option value="73" data-tokens="Gambia">Gambia</option>
+                                                                                                              <option value="74" data-tokens="Georgia">Georgia</option>
+                                                                                                              <option value="75" data-tokens="Ghana">Ghana</option>
+                                                                                                              <option value="76" data-tokens="Gibraltar">Gibraltar</option>
+                                                                                                              <option value="77" data-tokens="Granada">Granada</option>
+                                                                                                              <option value="78" data-tokens="Grecia">Grecia</option>
+                                                                                                              <option value="79" data-tokens="Groenlandia">Groenlandia</option>
+                                                                                                              <option value="80" data-tokens="Guadalupe">Guadalupe</option>
+                                                                                                              <option value="81" data-tokens="Guam">Guam</option>
+                                                                                                              <option value="82" data-tokens="Guatemala">Guatemala</option>
+                                                                                                              <option value="83" data-tokens="Guayana Francesa">Guayana Francesa</option>
+                                                                                                              <option value="84" data-tokens="Guernsey">Guernsey</option>
+                                                                                                              <option value="85" data-tokens="Guinea">Guinea</option>
+                                                                                                              <option value="86" data-tokens="Guinea-Bisáu">Guinea-Bisáu</option>
+                                                                                                              <option value="87" data-tokens="Guinea Ecuatorial">Guinea Ecuatorial</option>
+                                                                                                              <option value="88" data-tokens="Guyana">Guyana</option>
+                                                                                                              <option value="89" data-tokens="Haití">Haití</option>
+                                                                                                              <option value="90" data-tokens="Honduras">Honduras</option>
+                                                                                                              <option value="91" data-tokens="Hong Kong">Hong Kong</option>
+                                                                                                              <option value="92" data-tokens="Hungría">Hungría</option>
+                                                                                                              <option value="93" data-tokens="India">India</option>
+                                                                                                              <option value="94" data-tokens="Indonesia">Indonesia</option>
+                                                                                                              <option value="95" data-tokens="Irak">Irak</option>
+                                                                                                              <option value="96" data-tokens="Irán">Irán</option>
+                                                                                                              <option value="97" data-tokens="Irlanda">Irlanda</option>
+                                                                                                              <option value="98" data-tokens="Isla Bouvet">Isla Bouvet</option>
+                                                                                                              <option value="99" data-tokens="Isla de Man">Isla de Man</option>
+                                                                                                              <option value="100" data-tokens="Isla de Navidad">Isla de Navidad</option>
+                                                                                                              <option value="101" data-tokens="Islandia">Islandia</option>
+                                                                                                              <option value="102" data-tokens="Islas Caimán">Islas Caimán</option>
+                                                                                                              <option value="103" data-tokens="Islas Cocos">Islas Cocos</option>
+                                                                                                              <option value="104" data-tokens="Islas Cook">Islas Cook</option>
+                                                                                                              <option value="105" data-tokens="Islas Feroe">Islas Feroe</option>
+                                                                                                              <option value="106" data-tokens="Islas Georgias del Sur y Sandwich del Sur">Islas Georgias del Sur y Sandwich del Sur</option>
+                                                                                                              <option value="107" data-tokens="Islas Heard y McDonald">Islas Heard y McDonald</option>
+                                                                                                              <option value="108" data-tokens="Islas Malvinas">Islas Malvinas</option>
+                                                                                                              <option value="109" data-tokens="Islas Marianas del Norte">Islas Marianas del Norte</option>
+                                                                                                              <option value="110" data-tokens="Islas Marshall">Islas Marshall</option>
+                                                                                                              <option value="111" data-tokens="Islas Pitcairn">Islas Pitcairn</option>
+                                                                                                              <option value="112" data-tokens="Islas Salomón">Islas Salomón</option>
+                                                                                                              <option value="113" data-tokens="Islas Turcas y Caicos">Islas Turcas y Caicos</option>
+                                                                                                              <option value="114" data-tokens="Islas ultramarinas de Estados Unidos">Islas ultramarinas de Estados Unidos</option>
+                                                                                                              <option value="115" data-tokens="Islas Vírgenes Británicas">Islas Vírgenes Británicas</option>
+                                                                                                              <option value="116" data-tokens="Islas Vírgenes de los Estados Unidos">Islas Vírgenes de los Estados Unidos</option>
+                                                                                                              <option value="117" data-tokens="Israel">Israel</option>
+                                                                                                              <option value="118" data-tokens="Italia">Italia</option>
+                                                                                                              <option value="119" data-tokens="Jamaica">Jamaica</option>
+                                                                                                              <option value="120" data-tokens="Japón">Japón</option>
+                                                                                                              <option value="121" data-tokens="Jersey">Jersey</option>
+                                                                                                              <option value="122" data-tokens="Jordania">Jordania</option>
+                                                                                                              <option value="123" data-tokens="Kazajistán">Kazajistán</option>
+                                                                                                              <option value="124" data-tokens="Kenia">Kenia</option>
+                                                                                                              <option value="125" data-tokens="Kirguistán">Kirguistán</option>
+                                                                                                              <option value="126" data-tokens="Kiribati">Kiribati</option>
+                                                                                                              <option value="127" data-tokens="Kuwait">Kuwait</option>
+                                                                                                              <option value="128" data-tokens="Laos">Laos</option>
+                                                                                                              <option value="129" data-tokens="Lesoto">Lesoto</option>
+                                                                                                              <option value="130" data-tokens="Letonia">Letonia</option>
+                                                                                                              <option value="131" data-tokens="Líbano">Líbano</option>
+                                                                                                              <option value="132" data-tokens="Liberia">Liberia</option>
+                                                                                                              <option value="133" data-tokens="Libia">Libia</option>
+                                                                                                              <option value="134" data-tokens="Liechtenstein">Liechtenstein</option>
+                                                                                                              <option value="135" data-tokens="Lituania">Lituania</option>
+                                                                                                              <option value="136" data-tokens="Luxemburgo">Luxemburgo</option>
+                                                                                                              <option value="137" data-tokens="Macao">Macao</option>
+                                                                                                              <option value="138" data-tokens="Macedonia">Macedonia</option>
+                                                                                                              <option value="139" data-tokens="Madagascar">Madagascar</option>
+                                                                                                              <option value="140" data-tokens="Malasia">Malasia</option>
+                                                                                                              <option value="141" data-tokens="Malaui">Malaui</option>
+                                                                                                              <option value="142" data-tokens="Maldivas">Maldivas</option>
+                                                                                                              <option value="143" data-tokens="Malí">Malí</option>
+                                                                                                              <option value="144" data-tokens="Malta">Malta</option>
+                                                                                                              <option value="145" data-tokens="Marruecos">Marruecos</option>
+                                                                                                              <option value="146" data-tokens="Martinica">Martinica</option>
+                                                                                                              <option value="147" data-tokens="Mauricio">Mauricio</option>
+                                                                                                              <option value="148" data-tokens="Mauritania">Mauritania</option>
+                                                                                                              <option value="149" data-tokens="Mayotte">Mayotte</option>
+                                                                                                              <option value="150" data-tokens="México">México</option>
+                                                                                                              <option value="151" data-tokens="Micronesia">Micronesia</option>
+                                                                                                              <option value="152" data-tokens="Moldavia">Moldavia</option>
+                                                                                                              <option value="153" data-tokens="Mónaco">Mónaco</option>
+                                                                                                              <option value="154" data-tokens="Mongolia">Mongolia</option>
+                                                                                                              <option value="155" data-tokens="Montenegro">Montenegro</option>
+                                                                                                              <option value="156" data-tokens="Montserrat">Montserrat</option>
+                                                                                                              <option value="157" data-tokens="Mozambique">Mozambique</option>
+                                                                                                              <option value="158" data-tokens="Myanmar">Myanmar</option>
+                                                                                                              <option value="159" data-tokens="Namibia">Namibia</option>
+                                                                                                              <option value="160" data-tokens="Nauru">Nauru</option>
+                                                                                                              <option value="161" data-tokens="Nepal">Nepal</option>
+                                                                                                              <option value="162" data-tokens="Nicaragua">Nicaragua</option>
+                                                                                                              <option value="163" data-tokens="Níger">Níger</option>
+                                                                                                              <option value="164" data-tokens="Nigeria">Nigeria</option>
+                                                                                                              <option value="165" data-tokens="Niue">Niue</option>
+                                                                                                              <option value="166" data-tokens="Norfolk">Norfolk</option>
+                                                                                                              <option value="167" data-tokens="Noruega">Noruega</option>
+                                                                                                              <option value="168" data-tokens="Nueva Caledonia">Nueva Caledonia</option>
+                                                                                                              <option value="169" data-tokens="Nueva Zelanda">Nueva Zelanda</option>
+                                                                                                              <option value="170" data-tokens="Omán">Omán</option>
+                                                                                                              <option value="171" data-tokens="Países Bajos">Países Bajos</option>
+                                                                                                              <option value="172" data-tokens="Pakistán">Pakistán</option>
+                                                                                                              <option value="173" data-tokens="Palaos">Palaos</option>
+                                                                                                              <option value="174" data-tokens="Palestina">Palestina</option>
+                                                                                                              <option value="175" data-tokens="Panamá">Panamá</option>
+                                                                                                              <option value="176" data-tokens="Papúa Nueva Guinea">Papúa Nueva Guinea</option>
+                                                                                                              <option value="177" data-tokens="Paraguay">Paraguay</option>
+                                                                                                              <option value="178" data-tokens="Perú">Perú</option>
+                                                                                                              <option value="179" data-tokens="Polinesia Francesa">Polinesia Francesa</option>
+                                                                                                              <option value="180" data-tokens="Polonia">Polonia</option>
+                                                                                                              <option value="181" data-tokens="Portugal">Portugal</option>
+                                                                                                              <option value="182" data-tokens="Puerto Rico">Puerto Rico</option>
+                                                                                                              <option value="183" data-tokens="Reino Unido">Reino Unido</option>
+                                                                                                              <option value="184" data-tokens="República Árabe Saharaui Democrática">República Árabe Saharaui Democrática</option>
+                                                                                                              <option value="185" data-tokens="República Centroafricana">República Centroafricana</option>
+                                                                                                              <option value="186" data-tokens="República Checa">República Checa</option>
+                                                                                                              <option value="187" data-tokens="República del Congo">República del Congo</option>
+                                                                                                              <option value="188" data-tokens="República Democrática del Congo">República Democrática del Congo</option>
+                                                                                                              <option value="189" data-tokens="República Dominicana">República Dominicana</option>
+                                                                                                              <option value="190" data-tokens="Reunión">Reunión</option>
+                                                                                                              <option value="191" data-tokens="Ruanda">Ruanda</option>
+                                                                                                              <option value="192" data-tokens="Rumania">Rumania</option>
+                                                                                                              <option value="193" data-tokens="Rusia">Rusia</option>
+                                                                                                              <option value="194" data-tokens="Samoa">Samoa</option>
+                                                                                                              <option value="195" data-tokens="Samoa Americana">Samoa Americana</option>
+                                                                                                              <option value="196" data-tokens="San Bartolomé">San Bartolomé</option>
+                                                                                                              <option value="197" data-tokens="San Cristóbal y Nieves">San Cristóbal y Nieves</option>
+                                                                                                              <option value="198" data-tokens="San Marino">San Marino</option>
+                                                                                                              <option value="199" data-tokens="San Martín">San Martín</option>
+                                                                                                              <option value="200" data-tokens="San Pedro y Miquelón">San Pedro y Miquelón</option>
+                                                                                                              <option value="201" data-tokens="San Vicente y las Granadinas">San Vicente y las Granadinas</option>
+                                                                                                              <option value="202" data-tokens="Santa Elena, Ascensión y Tristán de Acuña">Santa Elena, Ascensión y Tristán de Acuña</option>
+                                                                                                              <option value="203" data-tokens="Santa Lucía">Santa Lucía</option>
+                                                                                                              <option value="204" data-tokens="Santo Tomé y Príncipe">Santo Tomé y Príncipe</option>
+                                                                                                              <option value="205" data-tokens="Senegal">Senegal</option>
+                                                                                                              <option value="206" data-tokens="Serbia">Serbia</option>
+                                                                                                              <option value="207" data-tokens="Seychelles">Seychelles</option>
+                                                                                                              <option value="208" data-tokens="Sierra Leona">Sierra Leona</option>
+                                                                                                              <option value="209" data-tokens="Singapur">Singapur</option>
+                                                                                                              <option value="210" data-tokens="Sint Maarten">Sint Maarten</option>
+                                                                                                              <option value="211" data-tokens="Siria">Siria</option>
+                                                                                                              <option value="212" data-tokens="Somalia">Somalia</option>
+                                                                                                              <option value="213" data-tokens="Sri Lanka">Sri Lanka</option>
+                                                                                                              <option value="214" data-tokens="Suazilandia">Suazilandia</option>
+                                                                                                              <option value="215" data-tokens="Sudáfrica">Sudáfrica</option>
+                                                                                                              <option value="216" data-tokens="Sudán">Sudán</option>
+                                                                                                              <option value="217" data-tokens="Sudán del Sur">Sudán del Sur</option>
+                                                                                                              <option value="218" data-tokens="Suecia">Suecia</option>
+                                                                                                              <option value="219" data-tokens="Suiza">Suiza</option>
+                                                                                                              <option value="220" data-tokens="Surinam">Surinam</option>
+                                                                                                              <option value="221" data-tokens="Svalbard y Jan Mayen">Svalbard y Jan Mayen</option>
+                                                                                                              <option value="222" data-tokens="Tailandia">Tailandia</option>
+                                                                                                              <option value="223" data-tokens="Taiwán (República de China)">Taiwán (República de China)</option>
+                                                                                                              <option value="224" data-tokens="Tanzania">Tanzania</option>
+                                                                                                              <option value="225" data-tokens="Tayikistán">Tayikistán</option>
+                                                                                                              <option value="226" data-tokens="Territorio Británico del Océano Índico">Territorio Británico del Océano Índico</option>
+                                                                                                              <option value="227" data-tokens="Tierras Australes y Antárticas Francesas">Tierras Australes y Antárticas Francesas</option>
+                                                                                                              <option value="228" data-tokens="Timor Oriental">Timor Oriental</option>
+                                                                                                              <option value="229" data-tokens="Togo">Togo</option>
+                                                                                                              <option value="230" data-tokens="Tokelau">Tokelau</option>
+                                                                                                              <option value="231" data-tokens="Tonga">Tonga</option>
+                                                                                                              <option value="232" data-tokens="Trinidad y Tobago">Trinidad y Tobago</option>
+                                                                                                              <option value="233" data-tokens="Túnez">Túnez</option>
+                                                                                                              <option value="234" data-tokens="Turkmenistán">Turkmenistán</option>
+                                                                                                              <option value="235" data-tokens="Turquía">Turquía</option>
+                                                                                                              <option value="236" data-tokens="Tuvalu">Tuvalu</option>
+                                                                                                              <option value="237" data-tokens="Ucrania">Ucrania</option>
+                                                                                                              <option value="238" data-tokens="Uganda">Uganda</option>
+                                                                                                              <option value="239" data-tokens="Uruguay">Uruguay</option>
+                                                                                                              <option value="240" data-tokens="Uzbekistán">Uzbekistán</option>
+                                                                                                              <option value="241" data-tokens="Vanuatu">Vanuatu</option>
+                                                                                                              <option value="242" data-tokens="Vaticano, Ciudad del">Vaticano, Ciudad del</option>
+                                                                                                              <option value="243" data-tokens="Venezuela">Venezuela</option>
+                                                                                                              <option value="244" data-tokens="Vietnam">Vietnam</option>
+                                                                                                              <option value="245" data-tokens="Wallis y Futuna">Wallis y Futuna</option>
+                                                                                                              <option value="246" data-tokens="Yemen">Yemen</option>
+                                                                                                              <option value="247" data-tokens="Yibuti">Yibuti</option>
+                                                                                                              <option value="248" data-tokens="Zambia">Zambia</option>
+                                                                                                              <option value="249" data-tokens="Zimbabue">Zimbabue</option>
+                                                                                                              <option value="250" data-tokens="Otro">Otro</option>
+                                                                                                      </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="pais-mi-cuenta" title="Perú"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Perú</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                  <span class="error-formulario" id="error-pais">Debe ingresar una información valida</span>
+                                              </div>
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                <div class="micuenta-form-group form-group">
+                                    
+                                    <input class="estilo-input-reformado form-control estilo-input-reformado" type="email" name="email-mi-cuenta" id="email-mi-cuenta" placeholder="Correo electrónico">
+                                    <span class="error-formulario" id="error-email">Debe ingresar una información valida</span>
+                                </div>
+                                              </div>
+                                              <div class="col-md-12 text-left mt-3">
+                                                  <button type="button" class="btn btn-primary mb-2 float-right pt-2" id="btn-cambio-clave" onclick="actualizarInformacion()">Actualizar</button>
+                                                  
+                                              </div>
+                                          </div>
                           </div>
+                          <div class="col-md-1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                            <div class="tab-pane fade divcon-login" id="cambiarclave" role="tabpanel" aria-labelledby="cambiarclavetab">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <div class="col-md-1"></div>
+                                  <div class="col-md-10 contenedor-informacion-mi-cuenta">
+                                    <div class="col-md-12 subtitulo-mi-cuenta pb-3">
+                            <h3>Cambio Clave</h3>
+                          </div>
+                                      <form id="form_login" method="post">
+                                          <input type="hidden" name="_token" value="YjeLtDgTJPXILVPuV6qO07MYoWBbIQsBV0L9ZsaM">						                            <div class="row">
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                <div class="micuenta-form-group form-group">
+                                    
+                                    <input class="estilo-input-reformado form-control estilo-input-reformado" type="password" name="nuevaClave" id="nuevaClave" onchange="validaClave()" required="" placeholder="Clave">
+                                </div>
+                                              </div>
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                                                <div class="micuenta-form-group form-group">
+                                    
+                                    <input class="estilo-input-reformado form-control estilo-input-reformado" type="password" name="repetirNuevaClave" id="repetirNuevaClave" onchange="validaClave()" required="" placeholder="Repetir clave">
+                                </div>
+                                              </div>
+                                               <div class="col-md-12 mt-3">
+                                                  <button type="button" class="btn btn-primary mb-2 float-right" id="btn-cambio-clave" onclick="actualizarClave()">Actualizar clave</button>
+                                                  
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="col-md-1"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade divcon-login" id="solicitudesPentidentesBooster" role="tabpanel" aria-labelledby="solicitudesPentidentesBooster">
+                              <div class="col-md-12">
+                                <div class="row" id="contenidoSolicitudesPendientesBooster">
+  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade divcon-login" id="solicitudesEnProceso" role="tabpanel" aria-labelledby="solicitudesEnProceso">
+                              <div class="col-md-12">
+                                <div class="row" id="contenidoSolicitudesEnProceso"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade divcon-login active show" id="solicitudTerminadas" role="tabpanel" aria-labelledby="solicitudesterminadas">
+                              <div class="col-md-12">
+                                <div class="row" id="contenidoSolicitudTerminada"><div class="col-md-12 contenedor-solicitudes mt-2"><div class="col-md-12 text-center titulo-numero-solicitud"><span>Número de solicitud: </span><span>1847</span><i class="fa fa-comments float-right consultar-chat-termianda pointer" title="Consultar Chat" onclick="consultarChatSolicitudFinalizada(1847)"><span style="margin-left: 5px;"></span></i></div><div class="col-md 12 contenedor-informacion-servicio-termiando"><div class="row"><div class="col-md-4 contenedor-ligas-divisiones-mi-cuenta-termiandas"><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-actual-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/diamond-division-i.png" alt=""></div><div class="col-md-12 text-center"><span>Diamante</span><span> División I</span></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-destino-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/master.png" alt=""></div><div class="col-md-12 text-center"><span>Master</span></div></div></div></div><div class="col-md-8"><div class="row"><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Puntos Actuales: </span><b><span class="texto-extras-servicio">0 - 69</span></b><br><span>Puntos Promedio: </span><b><span class="texto-extras-servicio">16 - 24 LP</span></b><br><span>Servidor: </span><b><span class="texto-extras-servicio">(LAN) Latinoamérica del Norte</span></b></div><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Queue: </span><b><span class="texto-extras-servicio">Solo / Duo</span></b><br><span>NickName: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>usuario: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>clave: </span><b><span class="texto-extras-servicio">Elomar123</span></b></div><div class="col-md-12 contenedor-total-servicio-terminado"><span id="precio-servicio-terminado-1847"><span>Precio total del servicio</span><br><div class="contenedor-precio-servicio-terminado">PEN S/ 54,43</div></span></div></div></div></div></div></div><div class="separador-solicitudes"></div><div class="col-md-12 contenedor-solicitudes mt-2"><div class="col-md-12 text-center titulo-numero-solicitud"><span>Número de solicitud: </span><span>1842</span><i class="fa fa-comments float-right consultar-chat-termianda pointer" title="Consultar Chat" onclick="consultarChatSolicitudFinalizada(1842)"><span style="margin-left: 5px;"></span></i></div><div class="col-md 12 contenedor-informacion-servicio-termiando"><div class="row"><div class="col-md-4 contenedor-ligas-divisiones-mi-cuenta-termiandas"><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-actual-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/diamond-division-ii.png" alt=""></div><div class="col-md-12 text-center"><span>Diamante</span><span> División II</span></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-destino-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/diamond-division-i.png" alt=""></div><div class="col-md-12 text-center"><span>Diamante</span><span> División I</span></div></div></div></div><div class="col-md-8"><div class="row"><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Puntos Actuales: </span><b><span class="texto-extras-servicio">0 - 69</span></b><br><span>Puntos Promedio: </span><b><span class="texto-extras-servicio">16 - 24 LP</span></b><br><span>Servidor: </span><b><span class="texto-extras-servicio">(LAN) Latinoamérica del Norte</span></b></div><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Queue: </span><b><span class="texto-extras-servicio">Solo / Duo</span></b><br><span>NickName: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>usuario: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>clave: </span><b><span class="texto-extras-servicio">Elomar133</span></b></div><div class="col-md-12 contenedor-total-servicio-terminado"><span id="precio-servicio-terminado-1842"><span>Precio total del servicio</span><br><div class="contenedor-precio-servicio-terminado">PEN S/ 28,98</div></span></div></div></div></div></div></div><div class="separador-solicitudes"></div><div class="col-md-12 contenedor-solicitudes mt-2"><div class="col-md-12 text-center titulo-numero-solicitud"><span>Número de solicitud: </span><span>1676</span><i class="fa fa-comments float-right consultar-chat-termianda pointer" title="Consultar Chat" onclick="consultarChatSolicitudFinalizada(1676)"><span style="margin-left: 5px;"></span></i></div><div class="col-md 12 contenedor-informacion-servicio-termiando"><div class="row"><div class="col-md-4 contenedor-ligas-divisiones-mi-cuenta-termiandas"><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-actual-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/platinum-division-iv.png" alt=""></div><div class="col-md-12 text-center"><span>Platino</span><span> División IV</span></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-destino-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/platinum-division-iii.png" alt=""></div><div class="col-md-12 text-center"><span>Platino</span><span> División III</span></div></div></div></div><div class="col-md-8"><div class="row"><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Puntos Actuales: </span><b><span class="texto-extras-servicio">0 - 69</span></b><br><span>Puntos Promedio: </span><b><span class="texto-extras-servicio">16 - 24 LP</span></b><br><span>Servidor: </span><b><span class="texto-extras-servicio">(LAN) Latinoamérica del Norte</span></b></div><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Queue: </span><b><span class="texto-extras-servicio">Solo / Duo</span></b><br><span>NickName: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>usuario: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>clave: </span><b><span class="texto-extras-servicio">Ratita987</span></b></div><div class="col-md-12 contenedor-total-servicio-terminado"><span id="precio-servicio-terminado-1676"><span>Precio total del servicio</span><br><div class="contenedor-precio-servicio-terminado">PEN S/ 25,20</div></span></div></div></div></div></div></div><div class="separador-solicitudes"></div><div class="col-md-12 contenedor-solicitudes mt-2"><div class="col-md-12 text-center titulo-numero-solicitud"><span>Número de solicitud: </span><span>1655</span><i class="fa fa-comments float-right consultar-chat-termianda pointer" title="Consultar Chat" onclick="consultarChatSolicitudFinalizada(1655)"><span style="margin-left: 5px;"></span></i></div><div class="col-md 12 contenedor-informacion-servicio-termiando"><div class="row"><div class="col-md-4 contenedor-ligas-divisiones-mi-cuenta-termiandas"><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-actual-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/platinum-division-iii.png" alt=""></div><div class="col-md-12 text-center"><span>Platino</span><span> División I</span></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-destino-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/platinum-division-iv.png" alt=""></div><div class="col-md-12 text-center"><span>Platino</span><span> División IV</span></div></div></div></div><div class="col-md-8"><div class="row"><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Puntos Actuales: </span><b><span class="texto-extras-servicio">0 - 69</span></b><br><span>Puntos Promedio: </span><b><span class="texto-extras-servicio">15 o menos puntos</span></b><br><span>Servidor: </span><b><span class="texto-extras-servicio">(LAN) Latinoamérica del Norte</span></b></div><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Queue: </span><b><span class="texto-extras-servicio">Solo / Duo</span></b><br><span>NickName: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>usuario: </span><b><span class="texto-extras-servicio">chriszflowpa@gmail.com</span></b><br><span>clave: </span><b><span class="texto-extras-servicio">Christian27</span></b></div><div class="col-md-12 contenedor-total-servicio-terminado"><span id="precio-servicio-terminado-1655"><span>Precio total del servicio</span><br><div class="contenedor-precio-servicio-terminado">PEN S/ 38,64</div></span></div></div></div></div></div></div><div class="separador-solicitudes"></div><div class="col-md-12 contenedor-solicitudes mt-2"><div class="col-md-12 text-center titulo-numero-solicitud"><span>Número de solicitud: </span><span>1097</span><i class="fa fa-comments float-right consultar-chat-termianda pointer" title="Consultar Chat" onclick="consultarChatSolicitudFinalizada(1097)"><span style="margin-left: 5px;"></span></i></div><div class="col-md 12 contenedor-informacion-servicio-termiando"><div class="row"><div class="col-md-4 contenedor-ligas-divisiones-mi-cuenta-termiandas"><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-actual-solicitudes-terminadas text-center"><div class="conendor-imagen-liga">
+                                  <img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/diamond-division-i.png" alt=""></div><div class="col-md-12 text-center"><span>Diamante</span><span> División I</span></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 imagen-liga-destino-solicitudes-terminadas text-center"><div class="conendor-imagen-liga"><img src="https://ezlol.gg/storage/web/archivos/juegoez/liga/master.png" alt=""></div><div class="col-md-12 text-center"><span>Master</span></div></div></div></div><div class="col-md-8"><div class="row"><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Puntos Actuales: </span><b><span class="texto-extras-servicio">0 - 69</span></b><br><span>Puntos Promedio: </span><b><span class="texto-extras-servicio">16 - 24 LP</span></b><br><span>Servidor: </span><b><span class="texto-extras-servicio">(LAN) Latinoamérica del Norte</span></b></div><div class="col-md-6 contenedor-detalles-servicio-termiando"><span>Queue: </span><b><span class="texto-extras-servicio">Solo / Duo</span></b><br><span>NickName: </span><b><span class="texto-extras-servicio">Christian</span></b><br><span>usuario: </span><b><span class="texto-extras-servicio">Chriszflow27</span></b><br><span>clave: </span><b><span class="texto-extras-servicio">Elomar123</span></b></div><div class="col-md-12 contenedor-total-servicio-terminado"><span id="precio-servicio-terminado-1097"><span>Precio total del servicio</span><br><div class="contenedor-precio-servicio-terminado">PEN S/ 40,32</div></span></div></div></div></div></div></div></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade divcon-login" id="solicitudesPendientesPago" role="tabpanel" aria-labelledby="solicitudesPendientesPago">
+                              <div class="col-md-12">
+                                <div class="row" id="contenidoSolicitudesPendientesPago">
+  
+                                </div>
+                              </div>
+                            </div>
+  
+  
+  
+                        </div>
                         </div>  
                         <div class="all dev row" style="width: 100%;">
     asdsda
@@ -315,7 +693,7 @@
 
 
     <footer>
-      <div class="container">
+      <div class="container col-md-12 fondo-seccion">
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
