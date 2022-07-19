@@ -554,7 +554,7 @@ ul li:hover {
               <div class='credit-info'>
                 <div class='credit-info-content'>
                   <table class='half-input-table'>
-                    <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                    <tr><td>Seleccione su entidad financiera: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
                       <div class='dropdown-select'>
                       <ul>
                         <li>Master Card</li>
@@ -564,13 +564,13 @@ ul li:hover {
                      </td></tr>
                   </table>
                   <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
-                  Card Number
+                  Numero Tarjeta
                   <input class='input-field'></input>
-                  Card Holder
+                  Nombre Titular
                   <input class='input-field'></input>
                   <table class='half-input-table'>
                     <tr>
-                      <td> Expires
+                      <td> MM/AA
                         <input class='input-field'></input>
                       </td>
                       <td>CVC
@@ -578,7 +578,7 @@ ul li:hover {
                       </td>
                     </tr>
                   </table>
-                  <button class='pay-btn'>Checkout</button>
+                  <button class='pay-btn' onclick="showAlert2()">Pagar</button>
       
                 </div>
       
@@ -601,6 +601,8 @@ ul li:hover {
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./assets/js/alert.js"></script>
     <script src="./assets/js/pago.js"></script>
     <script rel="preload" src="https://ezlol.gg/storage/web/js/particulas.js"></script>
     <script src="./assets/js/home.js"></script>

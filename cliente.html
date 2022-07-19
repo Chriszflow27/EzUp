@@ -125,6 +125,17 @@
     background-attachment: fixed;
     /* padding-bottom: 70px; */
 }
+.fondo-informacion-ez {
+    background:transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+}
     </style>
   </head>
 
@@ -210,680 +221,247 @@
     <script rel="preload" src="https://ezlol.gg/storage/web/js/particles.min.js"></script>
 
     <div class="products col-md-12 fondo-seccion" style="margin-top: 30px;">
+      <div class="col-md-12 fondo-informacion-ez">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center padding-informacion-ez hvr-bounce-in">
+                            <div class="col-md-12 eliminar-padding-div imagenes-index-info-ez">
+                                <img src="https://ezlol.gg/storage/repositorio/home/informacion-ez/icono-precio-calidad.png" alt="">
+                                <div class="col-md-12 eliminar-padding-div titulo-informacion-ez pt-3">
+                                    <h4>CALIDAD</h4>
+                                </div>
+                                <div class="col-md-12 eliminar-padding-div introduccion-informacion-ez pt-2">
+                                    <p><strong>Calidad y eficacia </strong>en cada servicio, atención y plataforma personalizada para TI!</p>
+                                </div>
+                            </div>    
+                        </div>
+                    
+                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center padding-informacion-ez hvr-bounce-in">
+                            <div class="col-md-12 eliminar-padding-div imagenes-index-info-ez">
+                                <img src="https://ezlol.gg/storage/repositorio/home/informacion-ez/icono-boosters.png" alt="">
+                                <div class="col-md-12 eliminar-padding-div titulo-informacion-ez pt-3">
+                                    <h4>BOOSTERS</h4>
+                                </div>
+                                <div class="col-md-12 eliminar-padding-div introduccion-informacion-ez pt-2">
+                                    <p><strong>+30 CHALLENGERS</strong> a tu servicio, los mejores de cada región trabajan con nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center padding-informacion-ez hvr-bounce-in">
+                            <div class="col-md-12 eliminar-padding-div imagenes-index-info-ez">
+                                <img src="https://ezlol.gg/storage/repositorio/home/informacion-ez/icono-equipo-ez.png" alt="">    
+                                <div class="col-md-12 eliminar-padding-div titulo-informacion-ez pt-3">
+                                    <h4>EQUIPO EZ</h4>
+                                </div>
+                                <div class="col-md-12 eliminar-padding-div introduccion-informacion-ez pt-2">
+                                    <p>Un equipo de trabajo <strong>con experiencia</strong> esperando para atenderte, <strong>escribenos AHORA!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center padding-informacion-ez hvr-bounce-in">
+                            <div class="col-md-12 eliminar-padding-div imagenes-index-info-ez">
+                                <img src="https://ezlol.gg/storage/repositorio/home/informacion-ez/icono-respaldo.png" alt="">
+                                <div class="col-md-12 eliminar-padding-div titulo-informacion-ez pt-3">
+                                    <h4>RESPALDO</h4>
+                                </div>
+                                <div class="col-md-12 eliminar-padding-div introduccion-informacion-ez pt-2">
+                                    <p><strong>+4 AÑOS&nbsp;</strong>en el mercado, <strong>+5K&nbsp;SERVICIOS</strong>,&nbsp;<strong>+10k</strong> en nuestra COMUNIDAD&nbsp;<strong>¿Qué esperas?</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 div-sobrepuesto-sldier">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="filters"style="margin-bottom: 10px;">
-              <ul>
-                  <li id = "division_link" data-filter=".des" style = "font-size: 25px;" class = "active">Solo/Q</li>
-                  <li id="" data-filter=".dev" style = "font-size: 25px;" >Posicionamiento</li>
-              </ul>
-            </div>
+        <div class="col-md-12 text-center">
+          <h1>
+              Reviews
+          </h1>
+          <div class="contenedor-estrellas-index-reviews">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
           </div>
-          <div class="col-md-12">
-            <div class="filters-content">
-                <div class="row grid">
-                    <div class="all des row" style="width: 100%;">
-                      <div class="col-lg-4 col-md-4">
-                        <label class = "lg_label" >Liga Actual</label>
-                        <div class="row">
-                          <div class="col-lg-8 col-md-8">
-                            <div class="form-group">
-                              <select class="form-control" name="Clasificacion"
-                              id="Clasificacion"
-                              onchange="gettier_old(), limit(), limit2()"
-                              style="margin-bottom: 10px;">
-                              <option value="hierro" selected>HIERRO</option>
-                              <option value="bronce">BRONCE</option>
-                              <option value="plata">PLATA</option>
-                              <option value="oro">ORO</option>
-                              <option value="platino">PLATINO</option>
-                              <option value="diamante">DIAMANTE</option>
-                              </select>
-                              <select class="form-control" name="eloboost-division-old"
-                              id="eloboost-division-old"
-                              onchange="gettier_old(), limit2()"
-                               style="margin-bottom: 10px;">
-                               <option value="4">Division 4</option>
-                               <option value="3">Division 3</option>
-                               <option value="2">Division 2</option>
-                               <option value="1">Division 1</option>
-                              </select>
-                              <select class="form-control" name="eloboost-lp-old"
-                              id="eloboost-lp-old"
-                              onchange="gettier_lp(), gettier_old()"
-                               style="margin-bottom: 10px;">
-                               <option value="3">20+ LP</option>
-                               <option value="2">17-19 LP</option>
-                               <option value="1">15-17 LP</option>
-                               <option value="0" selected>0-15 LP</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4">
-                            <div class="badge"> 
-                              <img class="" src="assets/images/rangos/hierro (4).png" alt="League"
-                              id="tier-img-old">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-md-4">
-                        <label class = "lg_label" >Liga Deseada</label>
-                        <div class="row">
-                          <div class="col-lg-8 col-md-8">
-                            <div class="form-group">
-                              <select class="form-control" name="Rangodeseado"
-                              id="Rangodeseado"
-                              onchange="gettier_new(), checktier()"
-                               style="margin-bottom: 10px;">
-                               <option value="hierro" selected>HIERRO</option>
-                               <option value="bronce">BRONCE</option>
-                               <option value="plata">PLATA</option>
-                               <option value="oro">ORO</option>
-                               <option value="platino">PLATINO</option>
-                               <option value="diamante">DIAMANTE</option>
-                               <option value="master">MASTER</option>
-                              </select>
-                              <select class="form-control" name="eloboost-division-new"
-                              id="eloboost-division-new"
-                              onchange="gettier_new()"
-                              style="margin-bottom: 10px;">
-                              <option value="4">Division 4</option>
-                              <option value="3" selected>Division 3</option>
-                              <option value="2">Division 2</option>
-                              <option value="1">Division 1</option>
-                              </select>
-  
-                            </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4">
-                            <div class="badge"> 
-                              <img class="" src="./assets/images/rangos/bronce (3).png" alt="League"
-                              id="tier-img-new">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-2 col-md-2 row">
-                        <div class="col-lg-12 col-md-12">
-                          <label class = "lg_label">Server</label>
-                          <div class="form-group">
-                            <select class="form-control" id="sel1" style="margin-bottom: 10px;">
-                              <option>LAN</option>
-                              <option>LAS</option>
-                              <option>BR</option>
-                              <option>NA</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-2 col-md-2 row">
-                        <div class="col-lg-12 col-md-12">
-                          <div class="form-group">
-                            <label class = "lg_label" >Modo</label>
-                            <select class="form-control" id="sel1" style="margin-bottom: 10px;">
-                              <option>Solo/Duo</option>
-                              <option>Flex</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <section class="landing_product_section">
-                        <div class="container">
-                          <div class="row justify-content-center">
-                            <div class="col-12 text-center pb-5">
-                              <h2 class="section-title">Our Best Seller Product</h2>
-                              <p class="section-subtitle">The Passage Experienced A Surge In Popularity During The 1960s When Again During
-                                The 90s As Desktop Publishers</p>
-                            </div>
-                          </div>
-                          <div class="row mx-0">
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster1.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster3.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster5.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster6.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster7.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster8.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster9.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster10.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster11.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster12.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster13.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="all dev row" style="width: 100%;">
-                      <div class="col-lg-4 col-md-4">
-                        <label class = "lg_label" >Liga Actual</label>
-                        <div class="row">
-                          <div class="col-lg-8 col-md-8">
-                            <div class="form-group">
-                              <select class="form-control" name="Clasificacion"
-                              id="Clasificacion"
-                              onchange="gettier_old(), limit(), limit2()"
-                              style="margin-bottom: 10px;">
-                              <option value="hierro" selected>HIERRO</option>
-                              <option value="bronce">BRONCE</option>
-                              <option value="plata">PLATA</option>
-                              <option value="oro">ORO</option>
-                              <option value="platino">PLATINO</option>
-                              <option value="diamante">DIAMANTE</option>
-                              </select>
-                              <select class="form-control" name="eloboost-division-old"
-                              id="eloboost-division-old"
-                              onchange="gettier_old(), limit2()"
-                               style="margin-bottom: 10px;">
-                               <option value="4">Division 4</option>
-                               <option value="3">Division 3</option>
-                               <option value="2">Division 2</option>
-                               <option value="1">Division 1</option>
-                              </select>
-                              <select class="form-control" name="eloboost-lp-old"
-                              id="eloboost-lp-old"
-                              onchange="gettier_lp(), gettier_old()"
-                               style="margin-bottom: 10px;">
-                               <option value="3">20+ LP</option>
-                               <option value="2">17-19 LP</option>
-                               <option value="1">15-17 LP</option>
-                               <option value="0" selected>0-15 LP</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4">
-                            <div class="badge"> 
-                              <img class="" src="assets/images/rangos/hierro (4).png" alt="League"
-                              id="tier-img-old">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-md-4">
-                        <label class = "lg_label" >Liga Deseada</label>
-                        <div class="row">
-                          <div class="col-lg-8 col-md-8">
-                            <div class="form-group">
-                              <select class="form-control" name="Rangodeseado"
-                              id="Rangodeseado"
-                              onchange="gettier_new(), checktier()"
-                               style="margin-bottom: 10px;">
-                               <option value="hierro" selected>HIERRO</option>
-                               <option value="bronce">BRONCE</option>
-                               <option value="plata">PLATA</option>
-                               <option value="oro">ORO</option>
-                               <option value="platino">PLATINO</option>
-                               <option value="diamante">DIAMANTE</option>
-                               <option value="master">MASTER</option>
-                              </select>
-                              <select class="form-control" name="eloboost-division-new"
-                              id="eloboost-division-new"
-                              onchange="gettier_new()"
-                              style="margin-bottom: 10px;">
-                              <option value="4">Division 4</option>
-                              <option value="3" selected>Division 3</option>
-                              <option value="2">Division 2</option>
-                              <option value="1">Division 1</option>
-                              </select>
-  
-                            </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4">
-                            <div class="badge"> 
-                              <img class="" src="./assets/images/rangos/bronce (3).png" alt="League"
-                              id="tier-img-new">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-2 col-md-2 row">
-                        <div class="col-lg-12 col-md-12">
-                          <label class = "lg_label">Server</label>
-                          <div class="form-group">
-                            <select class="form-control" id="sel1" style="margin-bottom: 10px;">
-                              <option>LAN</option>
-                              <option>LAS</option>
-                              <option>BR</option>
-                              <option>NA</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-2 col-md-2 row">
-                        <div class="col-lg-12 col-md-12">
-                          <div class="form-group">
-                            <label class = "lg_label" >Modo</label>
-                            <select class="form-control" id="sel1" style="margin-bottom: 10px;">
-                              <option>Solo/Duo</option>
-                              <option>Flex</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <section class="landing_product_section">
-                        <div class="container">
-                          <div class="row justify-content-center">
-                            <div class="col-12 text-center pb-5">
-                              <h2 class="section-title">Our Best Seller Product</h2>
-                              <p class="section-subtitle">The Passage Experienced A Surge In Popularity During The 1960s When Again During
-                                The 90s As Desktop Publishers</p>
-                            </div>
-                          </div>
-                          <div class="row mx-0">
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.png" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster3.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster4.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster3.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster4.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Musk Melon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster3.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Orange</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster4.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Apple</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                              <div class="card product-card">
-                                <div class="product-img">
-                                  <img src="assets/images/booster/booster2.jpg" class="img-fluid /">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <h3>Oragon</h3>
-                                  <span>$70 KG</span>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Elegir booster
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                </div>
-            </div>
-          </div>
+          <div class="introduccion-reviews text-center">
+            <p>Aquí&nbsp;encontraras comentarios, referencias y ultimas calificaciones de los clientes que han tomado servicios recientemente</p>
         </div>
       </div>
-    </div>
-    
+          <div class="row">
+                              <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                      <a href="clientelol.html">
+                          <img src="assets/images/Juegos/lolicon.png" alt="">
+                          <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                              <div class="texto-div-sobrepuesto">
+                                  <span>LOL</span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                              <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                      <a href="https://ezlol.gg/servicios/cuentas">
+                          <img src="assets/images/Juegos/valoranticon.png" alt="">
+                          <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                              <div class="texto-div-sobrepuesto">
+                                  <span>Valorant</span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                              <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                      <a href="https://ezlol.gg/servicios/coaching">
+                          <img src="assets/images/Juegos/tfticon.png" alt="">
+                          <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                              <div class="texto-div-sobrepuesto">
+                                  <span>TFT</span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                    <a href="https://ezlol.gg/servicios/coaching">
+                        <img src="assets/images/Juegos/lgoricon.png" alt="">
+                        <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                            <div class="texto-div-sobrepuesto">
+                                <span>LOR</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                      </div>
+      </div>
+  </div>
+  <style>
+    .div-sobrepuesto-sldier{
+       background: transparent;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: 1;
+        /*margin-top:-135px;*/
+        padding-bottom: 20px;
+    }
+
+    .imagenes-div-sobrepuesto{
+        z-index: 2;
+    }
+
+    .imagenes-div-sobrepuesto img{
+        margin-top: 25px;
+        width: 80%;
+    }
+
+    .contenedor-textos-div-sobrepuesto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-div-sobrepuesto{
+        color: black;
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .texto-div-sobrepuesto span{
+        text-transform: capitalize;
+    }
+
+
+    @media(min-width: 0px) and (max-width: 500px){
+        .div-sobrepuesto-sldier{
+            background: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            z-index: 1;
+            padding-bottom: 20px;
+        }
+
+
+        .imagenes-div-sobrepuesto img {
+            width: 75%;
+        }
+
+        .texto-div-sobrepuesto{
+            color: white;
+            font-size: 9px;
+            padding-top: 0px;
+            padding-bottom: 1px;
+            margin-top: 6px;
+        }
+    }
+
+    @media( min-width: 1400px){
+        .div-sobrepuesto-sldier{
+            padding-bottom: 40px;
+        }
+    }
+</style>
+<div class="col-md-12 text-center">
+  <h1>
+      Reviews
+  </h1>
+  <div class="contenedor-estrellas-index-reviews">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+  </div>
+  <div class="introduccion-reviews text-center">
+    <p>Aquí&nbsp;encontraras comentarios, referencias y ultimas calificaciones de los clientes que han tomado servicios recientemente</p>
+</div>
+</div>
+<div class="col-md-12 div-sobrepuesto-sldier">
+  <div class="container">
+      <div class="row">
+                          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                  <a href="https://ezlol.gg/servicios/boosting">
+                      <img src="https://ezlol.gg/storage/web/archivos/servicios/boosting.png" alt="">
+                      <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                          <div class="texto-div-sobrepuesto">
+                              <span>Boosting</span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+                          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                  <a href="https://ezlol.gg/servicios/cuentas">
+                      <img src="https://ezlol.gg/storage/web/archivos/servicios/cuentas.png" alt="">
+                      <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                          <div class="texto-div-sobrepuesto">
+                              <span>Cuentas</span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+                          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 imagenes-div-sobrepuesto text-center align-self-center hvr-wobble-vertical">
+                  <a href="https://ezlol.gg/servicios/coaching">
+                      <img src="https://ezlol.gg/storage/web/archivos/servicios/couching.png" alt="">
+                      <div class="col-md-12 text-center align-self-center contenedor-textos-div-sobrepuesto">
+                          <div class="texto-div-sobrepuesto">
+                              <span>Coaching</span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+                  </div>
+  </div>
+</div>
     <div class="best-features col-md-12 fondo-seccion">
       <div class="container">
         <div class="row">
@@ -934,20 +512,15 @@
           <div class="col-lg-6 col-md-6">
             <div class="col-md-12">
               <div class="section-heading" style="margin-bottom: 20px;">
-                <h2>Precio Total</h2>
+                <h2>Video de presentacion</h2>
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
-              <div class="price-total">
-                <span class="value" style="padding-left:15px" id="precio">72.48</span>
-              </div>
+              <div _ngcontent-serverapp-c8="" class="front-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/JoClXBlVWRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen _ngcontent-serverApp-c8="" height="100%" id="video-frame" version="1.1" viewBox="0 0 100 50" width="100%"></iframe><g _ngcontent-serverApp-c8="" id="video-frame-outer"><circle _ngcontent-serverApp-c8="" cx="50" cy="25" fill="transparent" r="45" stroke="#E9A14C" stroke-width="1"></circle><circle _ngcontent-serverApp-c8="" cx="50" cy="25" fill="transparent" r="46.5" stroke="#E9A14C" stroke-width="0.5"></circle><rect _ngcontent-serverApp-c8="" fill="#f6f9fc" height="5" stroke="#E9A14C" stroke-width="1" transform="translate(5.5,21.5), rotate(45)" width="5" x="0" y="0"></rect><circle _ngcontent-serverApp-c8="" cx="50" cy="25" fill="#f6f9fc" r="44.6"></circle></g><circle _ngcontent-serverApp-c8="" cx="50" cy="25" fill="transparent" id="video-frame-inner" r="34" stroke="#E9A14C" stroke-dasharray="0.1,0.99" stroke-width="3"></circle></svg><div _ngcontent-serverapp-c8="" class="video-poster"><i _ngcontent-serverapp-c8="" class="ion-ios-play"></i></div></div>
               <div class="col-lg-12 col-md-12">
-                <a href="#" class="filled-button" style="font-size: 30px; padding-left: 50px; padding-right: 50px;" onclick="hesap()"><i class="fa fa-calculator" aria-hidden="true"></i> Calcular Precio</a>
-                <a href="pago.html" class="filled-button" style="font-size: 30px; padding-left: 50px; padding-right: 50px;" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Pagar Servicio</a>
               </div>
               
               <div class="col-lg-12 col-md-12">
-                <p style="margin-top:20px">Nuestros boosters no hablarán con nadie de tu lista de amigos. También desactivaremos el chat dentro del juego.</p>
               </div>
             </div>
           </div>
@@ -990,6 +563,7 @@
     <script src="assets/js/accordions.js"></script>
 
 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-f2e75b1848c60edded8","applicationID":"214896168","transactionName":"MhBSZQoZX0QAU0ZRXQtacVIMEV5ZTnFCSG4tAURBJDteWRVCXVReAAdDbSgZVlIiX1xMQAoZXFQKOFlYDFU=","queueTime":0,"applicationTime":28,"atts":"HldRE0IDTEo=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script>
     <script> 
       $(document).ready(function(){
         $('.filters ul #division_link').click();

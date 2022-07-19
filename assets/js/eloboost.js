@@ -21,7 +21,7 @@ function limit() {
         sec2.innerHTML = '<option value="bronce">BRONCE</option><option value="plata">PLATA</option><option value="oro">ORO</option><option value="platino">PLATINO</option><option value="diamante">DIAMANTE</option><option value="master">MASTER</option>';
     }
     if (sec1.value == 'plata') {
-        sec2.innerHTML = '<option value="plata">PLATA</option><option value="oro">ORO</option><option value="PLATINO">PLATINO</option><option value="diamante">DIAMANTE</option><option value="master">MASTER</option>';
+        sec2.innerHTML = '<option value="plata">PLATA</option><option value="oro">ORO</option><option value="platino">PLATINO</option><option value="diamante">DIAMANTE</option><option value="master">MASTER</option>';
     }
     if (sec1.value == 'oro') {
         sec2.innerHTML = '<option value="oro">ORO</option><option value="platino">PLATINO</option><option value="diamante">DIAMANTE</option><option value="master">MASTER</option>';
