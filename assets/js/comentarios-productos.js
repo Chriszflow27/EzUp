@@ -32,7 +32,7 @@ function estrellas(starsNumber) {
 
     }
     for (let j = number + 1; j <= 5; j++) {
-        retorno += `<span class="fa fa-star"></span>`
+        retorno += `<span class="fa fa-star-o"></span>`
     }
     return retorno;
 
