@@ -155,16 +155,19 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item  active">
-                <a class="nav-link nav_link" href="index.html" >Buy Boosting
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="admin.html" >Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
-              <li class="nav-item">
-                <a class="nav-link nav_link" href="demo.html">Demo</a>
+              <li class="nav-item  active">
+                <a class="nav-link nav_link" href="listaUsuarios.html">Listar Usuarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_link" id = "btn_login" href="login.html"data-target="#myModal">Log In</a>
+                <a class="nav-link nav_link" href="listaServicios.html">Listar Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" id = "btn_login" href="index.html">Cerrar Sesion</a>
               </li>
             </ul>
           </div>
@@ -173,34 +176,24 @@
     </header>
 
     <!-- Page Content -->
-    <div class="page-heading about-heading header-text" style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="page-heading about-heading header-text" style="padding-top: 0px; padding-bottom: 0px;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <div id="particles-js" class="contenedor-particulas"><canvas class="particles-js-canvas-el" width="235" height="135" style="width: 50%; height: 50%;"></canvas></div>
             <div class="text-content">
-              <section id="welcome" class="background-grey p-b-0">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7">
-                            <div class="heading-text heading-section text-right mt-5">
-                                <h1>Bienvenido</h1>
-                                <p>Hola, muchas gracias por visitar mi portfolio! Aqui proximamente tendras todos los proyectos en los que he trabajado, informacion de contacto y mucho mas<blink><i class="fa fa-i-cursor"></i></blink></p>
-                                <a href="src/view/sobremi.html" class="btn btn-dark" ><i class="fa fa-toggle-off"> </i> Sobre mi</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5"> <img style="width: 350px; height: 350px" alt="" src="assets/images/booster/wukong.png"> </div>
-                    </div>
-                </div>
-            </section>
+              <h4>EZ UP</h4>
+              <h2>INFORMES DE USUARIOS</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script rel="preload" src="https://ezlol.gg/storage/web/js/particles.min.js"></script>
 
-    <div class="container">
-      <h2>Usuarios de EzUp</h2>
-      <table class="table">
+    <div class="container" style="margin-top:25px">
+      <h2 >Usuarios de EzUp</h2>
+      <table class="table" style="margin-top:25px">
         <thead class="thead-dark" id="usersTable">
           <tr>
             <th scope="col">ID</th>
@@ -211,14 +204,119 @@
           </tr>
         </thead>
         <tbody>
-
+          <tr>
+            <th scope="row">1</th>
+            <td>Administrador</td>
+            <td>Chriszflow27</td>
+            <td>Christian Linares</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Booster</td>
+            <td>ElTioDiegoo</td>
+            <td>Diego Ventura</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Booster</td>
+            <td>ElPPStac10</td>
+            <td>Jose Santa Cruz</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Booster</td>
+            <td>YngxFav</td>
+            <td>Favio Che</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Booster</td>
+            <td>ACSoles</td>
+            <td>Angel Dolares</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Coach</td>
+            <td>PochiPoom</td>
+            <td>Pedro Perez</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Coach</td>
+            <td>ToñoNen</td>
+            <td>Antonio Moreno</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Booster</td>
+            <td>Josedeodo</td>
+            <td>Jose Deus</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Cliente</td>
+            <td>TheOmarLeon</td>
+            <td>Omar Leon</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Cliente</td>
+            <td>Mytical</td>
+            <td>Jireh Mitico</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Cliente</td>
+            <td>Campero10</td>
+            <td>Carlos Campero</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Cliente</td>
+            <td>JoaoM</td>
+            <td>Joao Moreno</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Cliente</td>
+            <td>Paolin12</td>
+            <td>Paolo Leon</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Cliente</td>
+            <td>Jamhver</td>
+            <td>Jampier Ventura</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Cliente</td>
+            <td>Rufian02</td>
+            <td>Jaze Iwazaki</td>
+            <td>12</td>
+          </tr>
         </tbody>
       </table>
-
+    <button id="btnCrearPdf" style="width:100%" >Generar Informe de Usuarios</button>
     </div>
 
-    
-
+    <script rel="preload" src="https://ezlol.gg/storage/web/js/particulas.js"></script>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/pdf.js"></script>
     <script src="assets/js/registrarUsuarios.js"></script>
     <script src="assets/js/uiLogic.js"></script>
     <!-- Bootstrap core JavaScript -->
